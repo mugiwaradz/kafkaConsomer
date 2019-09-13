@@ -46,7 +46,7 @@ public class ConsumerChannelConfig {
  
         return new ConcurrentMessageListenerContainer(consumerFactory(), containerProps);
     }
- 
+  
     @Bean
     public ConsumerFactory consumerFactory() {
         return new DefaultKafkaConsumerFactory(consumerConfigs());
